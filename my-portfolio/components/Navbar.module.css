@@ -1,0 +1,124 @@
+.header {
+    font-family: 'poppins';
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px) saturate(180%) brightness(150%) blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px 0px, rgba(0, 0, 0, 0.5) 0px 5px 25px 0px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+    opacity: 1;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .logoText {
+    color: white;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 3.5rem;
+  }
+  
+  .link {
+    font-size: 1rem;
+    font-weight: 530;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .link:hover {
+    color: white;
+  }
+  
+  .activeLink {
+    color: white;
+    font-weight: 600;
+  }
+
+
+/* Default hide hamburger */
+.hamburger {
+  display: none;
+}
+
+/* Overlay styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 2rem;
+  z-index: 999;
+}
+
+/* Close button */
+.close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+/* Mobile nav links */
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.mobileLink {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobileLink:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 20;
+  }
+}

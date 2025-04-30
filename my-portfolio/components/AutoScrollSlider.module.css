@@ -1,0 +1,37 @@
+.slider {
+  overflow-x: hidden;
+  white-space: nowrap;
+  width: 100%;
+  cursor: grab;
+  user-select: none; 
+}
+
+.active {
+  cursor: grabbing !important;
+}
+
+.track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 30s linear infinite;
+}
+
+.slider:hover .track {
+  animation-play-state: paused;
+}
+
+.track p {
+  display: inline-block;
+  padding: 0 3rem;
+  font-size: 1.1rem;
+  white-space: pre-line;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

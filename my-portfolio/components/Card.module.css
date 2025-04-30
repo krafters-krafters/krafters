@@ -1,0 +1,58 @@
+.card {
+  display: flex;
+  width: 18rem;
+  height: 19rem;
+  padding: 1.2rem;
+  color: white;
+  border-radius: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.cardWithShadow {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.cardWithShadow:hover {
+  box-shadow: 0px -16px 150px rgba(36, 58, 255, 0.43);
+}
+
+.cardWithBorder {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.image {
+  height: 30%;
+  max-height: 10rem;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 1;
+  font-family: 'poppins';
+  font-style: normal;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+  margin: 0px;
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'poppins';
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+}
